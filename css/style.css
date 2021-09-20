@@ -1,0 +1,112 @@
+
+body{
+    height: 100%;
+    background-image: linear-gradient(#97D3FF, #E5F4FF);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* TODO: Rename to bodyNightMode */
+.darkMode{
+    height: 100%;
+    background-image: linear-gradient( #01010C, #01010B);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#logo{
+    height: 40px;
+    width: 40px;
+}
+
+/* TODO: Add night mode formatting classes */
+
+/* titleFontBig */
+h1 {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    color: #00396D;
+}
+
+.h1OffColour{
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    color: #0D84F1;
+}
+/* mainFontBig */
+h2 {
+    font-family: 'Gowun Dodum', sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    color: #00396D;
+}
+/* titleFont */
+h3 {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #00396D;
+}
+
+.h3Bold{
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: #00396D;
+}
+
+label{
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: black;
+}
+
+
+.navLink{
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #00396D;
+}
+
+.navLinkActive{
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #0D84F1;
+}
+
+
+/* titleFontSmall */
+h4 {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: #00396D;
+}
+
+/* mainFont */
+p {
+    font-family: 'Gowun Dodum', sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    color: #00396D;
+}
+
+.pOffColour{
+    font-family: 'Gowun Dodum', sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    color: #0D84F1;
+}
+
