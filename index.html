@@ -9,14 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    
 </head>
 <body>
-    <button onclick="darkMode()">Test toggle</button>
+    <script type="text/javascript" src="../js/nightMode.js"></script>
+    <button onclick="nightMode()">Test toggle</button>
 
     <nav>
-        <!-- https://www.javascripttutorial.net/dom/manipulating/replace-a-dom-element/-->
-        <!--TODO: Replace img src when executing nightMode() --> <!--TODO: set to active colour --><img src="../assets/images/logo/sun.png" onclick="darkMode()" alt="Click for different content!" id="logo">
-        <span class="iconify" data-icon="fa:home" onclick="window.open('/index.html')"></span>
+        <!--TODO: Replace img src when executing nightMode() --> 
+        <img src="../assets/images/logo/sun.png" onclick="nightMode()" alt="Click for different content!" id="logo">
+        <!--TODO: set homeIcon to active colour -->
+        <span class="iconify homeIconActive" data-icon="fa:home" onclick="window.open('/index.html')"></span>
         <a href="pricing.html" class="navLink"  >Pricing</a> <!-- TODO: Replace with Software.html when executing nightMode()-->
         <a href="contact.html" class="navLink">Contact</a>
         <a href="music.html" class="navLink">Music</a> <!-- TODO: Make into a dropdown menu with releases on every page but music.html-->
@@ -24,12 +27,13 @@
         <button onclick="window.open('/loginSignUp.html')">Log In</button>
         <button onclick="window.open('/loginSignUp.html')">Sign Up</button>
         <!-- TODO: Add guest account functionality for shopping -->
-        <!-- TODO: Add basket/vinyl icon when a product is bought  -->
+        <!-- TODO: Add basket/vinyl icon when a product is added to basket  -->
         <span class="iconify" data-icon="entypo:vinyl"></span>
     </nav>
 
-    <div id="hero">  <!--TODO: Replace with link to twitch feed in nightMode()-->
-        <!-- TODO: Record studio video /--> 
+    <div id="hero">  
+        <!-- TODO: Record studio video --> 
+        <!--TODO: Replace with embed to twitch feed in nightMode()-->
     </div>
 
     <div id="player" >
@@ -37,24 +41,26 @@
     </div>
 
     <div id="subHero"> 
+        <!-- TODO: Replace with "Watch my channel trailer..." with nightMode -->
         <h1> Learn about all of the features of the studio</h1>
-        <!-- TODO: Record channel trailer / studio walkthrough -->
+        <!-- TODO: Record studio walkthrough for Day-->
+        <!-- TODO: Replace with channel trailer for Night -->
         
     </div>
 
     <div id="signUp">
         <h1> Want to stay updated?</h1>
         <h2>By signing up with this form, you will receive a monthly email newsletter as well as a community account with access to our forum.</h2>
-        <h2>Sign up for a free account</h2>
+        <h3 class="h3Bold">Sign up for a free account</h2>
         <input type="email" name="email" id="email" placeholder="Enter your email address"><br>
         <input type="password" name="password" id="password" placeholder="Enter your password"><br>
         <button>Sign Up</button><br> <!-- TODO: Add Sign Up -->
         <input type="checkbox" name="acceptTerms" id="acceptTerms" value="acceptTerms" class="checkbox">
         <label for="acceptTerms" id="acceptTermsLabel"class="checkBoxLabel">I accept the following</label><br>
-        <a href="">Terms and Conditions</a><br>
+        <a href="legal.html">Terms and Conditions</a><br>
         <input type="checkbox" name="subToMail" id="subToMail" value="subToMail" class="checkbox">
         <label for="subToMail" id="subToMail"class="checkBoxLabel">Subscribe to the mailing list</label><br>
-        <p>Information about releases, events and other news</p><br>
+        <p class="pOffColour">Information about releases, events and other news</p><br>
         <h2>Want to contact us? Listen to some of our <a href="music.html">music</a> with the <a href="#player">player</a> or browse our community <a href="community.html">forum</a> while we work on getting back to you.</h2>
         <button>Contact Us</button>
     </div>
@@ -63,10 +69,10 @@
         <!-- TODO: Possibly remove in nightMode / replace in darkMode -->
         <h3>Community</h3> 
         <h3>Studio</h3> <br>
-        <a href="featured.html">Featured artists</a>
-        <a href="aboutUs.html">About us</a> <br>
-        <a href="live.html">Live events</a>
-        <a href="legal.html">Legal</a>
+        <a class="footerLink" href="featured.html">Featured artists</a>
+        <a class="footerLink" href="aboutUs.html">About us</a> <br>
+        <a class="footerLink" href="live.html">Live events</a>
+        <a class="footerLink" href="legal.html">Legal</a>
         <hr>
         <p>Follow us:</p>
         <!-- TODO: Replace with moonlitmicrotonalmusic accounts on nightMode -->
@@ -74,15 +80,6 @@
         <span class="iconify" data-icon="akar-icons:twitch-fill" onclick="window.open('https://www.twitch.tv/dominicstudio')" ></span>
         <span class="iconify" data-icon="akar-icons:youtube-fill" onclick="window.open('https://www.youtube.com/channel/UCpfvvzBoJFaWQH9fsovsJog')"></span>
     </div>
-
-    <script>
-    // https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
-    function darkMode () {
-        // TODO: add formatting toggle for all elements
-        var bodyTog = document.body;
-        bodyTog.classList.toggle("darkMode");
-    }
-    </script>
 </body>
 
 </html>

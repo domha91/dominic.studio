@@ -5,20 +5,35 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-/* TODO: Rename to bodyNightMode */
-.darkMode{
+
+.bodyNight{
     height: 100%;
     background-image: linear-gradient( #01010C, #01010B);
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* TODO: Add night mode formatting classes */
 
 #logo{
     height: 40px;
     width: 40px;
 }
 
-/* TODO: Add night mode formatting classes */
+.homeIcon{
+    color: #00396D;
+}
+
+.homeIconActive{
+    color: #0D84F1;
+}
+
+.homeIconNight{
+    color: #E9EDFA;
+}
+
+.homeIconNightActive{
+    color: #FFFCE5;
+}
 
 /* titleFontBig */
 h1 {
@@ -29,7 +44,15 @@ h1 {
     color: #00396D;
 }
 
-.h1OffColour{
+.h1Night{
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    color: #E9EDFA;
+}
+
+.h1OffColourDay{
     font-family: 'Archivo', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -43,6 +66,13 @@ h2 {
     font-size: 36px;
     color: #00396D;
 }
+
+.h2Night{
+    font-family: 'Gowun Dodum', sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    color: #FFFCE5;
+}
 /* titleFont */
 h3 {
     font-family: 'Archivo', sans-serif;
@@ -52,6 +82,15 @@ h3 {
     color: #00396D;
 }
 
+.h3Night{
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #FFFCE5
+}
+
+/* titleFontBold */
 .h3Bold{
     font-family: 'Archivo', sans-serif;
     font-style: normal;
@@ -60,14 +99,29 @@ h3 {
     color: #00396D;
 }
 
+.h3BoldNight{
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: #E9EDFA;
+}
+
 label{
     font-family: 'Archivo', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
-    color: black;
+    color:#00396D;
 }
 
+.labelNight{
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color:#FFFCE5;
+}
 
 .navLink{
     font-family: 'Archivo', sans-serif;
@@ -77,12 +131,44 @@ label{
     color: #00396D;
 }
 
-.navLinkActive{
+.navLinkDayActive{
     font-family: 'Archivo', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
     color: #0D84F1;
+}
+
+.navLinkNight{
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #E9EDFA;
+}
+
+.navLinkNightActive{
+
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #FFFCE5;
+
+}
+
+.footerLink{
+    font-family: 'Gowun Dodum', sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    color: #00396D;
+}
+
+.footerLinkNight{
+    font-family: 'Gowun Dodum', sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    color: #E9EDFA;
 }
 
 
@@ -103,10 +189,24 @@ p {
     color: #00396D;
 }
 
+.pNight{
+    font-family: 'Gowun Dodum', sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    color: #FFFCE5;
+}
+
 .pOffColour{
     font-family: 'Gowun Dodum', sans-serif;
     font-style: normal;
     font-size: 30px;
     color: #0D84F1;
+}
+
+.pOffColourNight{
+    font-family: 'Gowun Dodum', sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    color: #E9EDFA;
 }
 
