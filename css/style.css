@@ -35,6 +35,22 @@ body{
     color: #FFFCE5;
 }
 
+.icon {
+    color: #0D84F1;
+}
+
+.iconNight{
+    color: #E9EDFA;
+}
+
+.vinylIcon{
+    color: black;
+}
+
+.vinylIconNight{
+    color: #fffccf;
+}
+
 /* titleFontBig */
 h1 {
     font-family: 'Archivo', sans-serif;
@@ -154,7 +170,22 @@ label{
     font-weight: normal;
     font-size: 36px;
     color: #FFFCE5;
+}
 
+a {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #0D84F1;
+}
+
+.aNight{
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #E9EDFA;
 }
 
 .footerLink{

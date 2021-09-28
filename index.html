@@ -12,15 +12,13 @@
     
 </head>
 <body>
-    <script type="text/javascript" src="../js/nightMode.js"></script>
+    
     <button onclick="nightMode()">Test toggle</button>
 
     <nav>
-        <!--TODO: Replace img src when executing nightMode() --> 
-        <img src="../assets/images/logo/sun.png" onclick="nightMode()" alt="Click for different content!" id="logo">
-        <!--TODO: set homeIcon to active colour -->
-        <span class="iconify homeIconActive" data-icon="fa:home" onclick="window.open('/index.html')"></span>
-        <a href="pricing.html" class="navLink"  >Pricing</a> <!-- TODO: Replace with Software.html when executing nightMode()-->
+        <img id="logo" src="../assets/images/logo/sun.png" onclick="nightMode()" alt="Click for different content!" >
+        <span class="iconify homeIconActive" id= "homeIconActive" data-icon="fa:home" onclick="window.open('/index.html')"></span>
+        <a href="pricing.html" id="pricingLink "class="navLink"  >Pricing</a> <!-- TODO: Replace with Software.html when executing nightMode()-->
         <a href="contact.html" class="navLink">Contact</a>
         <a href="music.html" class="navLink">Music</a> <!-- TODO: Make into a dropdown menu with releases on every page but music.html-->
         <a href="community.html" class="navLink">Community</a>
@@ -28,11 +26,12 @@
         <button onclick="window.open('/loginSignUp.html')">Sign Up</button>
         <!-- TODO: Add guest account functionality for shopping -->
         <!-- TODO: Add basket/vinyl icon when a product is added to basket  -->
-        <span class="iconify" data-icon="entypo:vinyl"></span>
+        <span class="iconify vinylIcon" id="vinylIcon" data-icon="entypo:vinyl"></span>
     </nav>
 
     <div id="hero">  
-        <!-- TODO: Record studio video --> 
+        <!--TODO: Embed studio video --> 
+        <iframe id="heroVid" width="560" height="315" src="https://www.youtube.com/embed/xImtB4Eiyog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <!--TODO: Replace with embed to twitch feed in nightMode()-->
     </div>
 
@@ -44,6 +43,7 @@
         <!-- TODO: Replace with "Watch my channel trailer..." with nightMode -->
         <h1> Learn about all of the features of the studio</h1>
         <!-- TODO: Record studio walkthrough for Day-->
+
         <!-- TODO: Replace with channel trailer for Night -->
         
     </div>
@@ -76,10 +76,12 @@
         <hr>
         <p>Follow us:</p>
         <!-- TODO: Replace with moonlitmicrotonalmusic accounts on nightMode -->
-        <span class="iconify" data-icon="akar-icons:instagram-fill" onclick="window.open('https://www.instagram.com/studio_dominic/')"></span>
-        <span class="iconify" data-icon="akar-icons:twitch-fill" onclick="window.open('https://www.twitch.tv/dominicstudio')" ></span>
-        <span class="iconify" data-icon="akar-icons:youtube-fill" onclick="window.open('https://www.youtube.com/channel/UCpfvvzBoJFaWQH9fsovsJog')"></span>
+        <span class="iconify icon" id="instaIcon" data-icon="akar-icons:instagram-fill" onclick="window.open('https://www.instagram.com/studio_dominic/')"></span>
+        <span class="iconify icon" id="twitchIcon" data-icon="akar-icons:twitch-fill" onclick="window.open('https://www.twitch.tv/dominicstudio')" ></span>
+        <span class="iconify icon" id="ytIcon" data-icon="akar-icons:youtube-fill" onclick="window.open('https://www.youtube.com/channel/UCpfvvzBoJFaWQH9fsovsJog')"></span>
     </div>
+
+    <script type="text/javascript" src="../js/nightMode.js"></script>
 </body>
 
 </html>
