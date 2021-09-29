@@ -17,25 +17,31 @@ body{
 #logo{
     height: 40px;
     width: 40px;
+    cursor: pointer;
 }
 
 .homeIcon{
+    cursor: pointer;
     color: #00396D;
 }
 
 .homeIconActive{
+    cursor: pointer;
     color: #0D84F1;
 }
 
 .homeIconNight{
+    cursor: pointer;
     color: #E9EDFA;
 }
 
 .homeIconNightActive{
+    cursor: pointer;
     color: #FFFCE5;
 }
 
 .icon {
+    cursor: pointer;
     color: #0D84F1;
 }
 
@@ -44,10 +50,12 @@ body{
 }
 
 .vinylIcon{
+    cursor: pointer;
     color: black;
 }
 
 .vinylIconNight{
+    cursor: pointer;
     color: #fffccf;
 }
 
@@ -145,7 +153,9 @@ label{
     font-weight: normal;
     font-size: 36px;
     color: #00396D;
+    display: inline-flex;
 }
+
 
 .navLinkDayActive{
     font-family: 'Archivo', sans-serif;
@@ -241,3 +251,26 @@ p {
     color: #E9EDFA;
 }
 
+#twitchEmbed{
+    display: none;
+}
+
+#subHeroCopyNight{
+    display: none;
+}
+
+#subHeroVidNight{
+    display: none;
+}
+
+#instaIcon{
+    cursor: pointer;
+}
+
+#twitchIcon{
+    cursor: pointer;
+}
+
+#ytIcon{
+    cursor: pointer;
+}
