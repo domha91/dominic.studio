@@ -109,6 +109,8 @@ function nightMode() {
     // TODO: add formatting toggle for all elements
     var body = document.body;
     body.classList.toggle("bodyNight");
+    nav.classList.toggle("navNight");
+
 
 
     if (document.getElementById("homeIcon")) {

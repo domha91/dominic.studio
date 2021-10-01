@@ -1,4 +1,11 @@
 
+.iconify{
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+
+
 body{
     height: 100%;
     background-image: linear-gradient(#97D3FF, #E5F4FF);
@@ -11,6 +18,89 @@ body{
     background-image: linear-gradient( #01010C, #01010B);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+nav{
+    background-color: #97D3FF;
+    overflow: hidden;
+    position: fixed;
+    margin: auto;
+    margin-left: 8%;
+    display: inline-flex;
+}
+
+.navNight{
+    background-color: #01010C;
+    overflow: hidden;
+    position: fixed;
+    margin: auto;
+    margin-left: 8%;
+    display: inline-flex;
+}
+
+#hero{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+#player{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#subHero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#signUp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input{
+    height: 40px;
+}
+
+button{
+    height: 40px;
+}
+
+#footer
+{
+    display:block;
+}
+
+
+#footerLinks{
+    margin-left: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#communityLinks{
+    
+    display: block;
+    justify-content: center;
+}
+
+#socialLinks{
+    
+    display: block;
+    justify-content: center;
+}
+
+#socialLinks{
+    margin-left: 75%;
+    height: 1%;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
 }
 
 /* TODO: Add night mode formatting classes */
@@ -154,7 +244,10 @@ label{
     font-weight: normal;
     font-size: 36px;
     color: #00396D;
-    display: inline-flex;
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 0.4rem;
 }
 
 
@@ -204,6 +297,9 @@ a {
     font-style: normal;
     font-size: 30px;
     color: #00396D;
+    float: right;
+    display: block ;
+
 }
 
 .footerLinkNight{

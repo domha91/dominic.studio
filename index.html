@@ -41,7 +41,7 @@
     </div>
 
     <div id="subHero"> 
-        <!-- Replace with "Watch my channel trailer..." with nightMode -->
+        <!-- Replace with "Watch my channel trailer:" with nightMode -->
         <h1 id="subHeroCopyDay"> Learn about all of the features of the studio:</h1>
         <h1 id="subHeroCopyNight">Watch my channel trailer:</h1>
         <!-- TODO: Record studio walkthrough for Day-->
@@ -53,15 +53,17 @@
     <div id="signUp">
         <h1> Want to stay updated?</h1>
         <h2>By signing up with this form, you will receive a monthly email newsletter as well as a community account with access to our forum.</h2>
-        <h3 class="h3Bold">Sign up for a free account</h2>
+        <h3 class="h3Bold">Sign up for a free account</h2> <br>
         <input type="email" name="email" id="email" placeholder="Enter your email address"><br>
         <input type="password" name="password" id="password" placeholder="Enter your password"><br>
         <button>Sign Up</button><br> <!-- TODO: Add Sign Up -->
-        <input type="checkbox" name="acceptTerms" id="acceptTerms" value="acceptTerms" class="checkbox">
-        <label for="acceptTerms" id="acceptTermsLabel"class="checkBoxLabel">I accept the following</label><br>
-        <a href="legal.html">Terms and Conditions</a><br>
-        <input type="checkbox" name="subToMail" id="subToMail" value="subToMail" class="checkbox">
+        
+        <label for="acceptTerms" id="acceptTermsLabel"class="checkBoxLabel">I accept the following </label> 
+        
+        <a href="legal.html">Terms and Conditions</a><input type="checkbox" name="acceptTerms" id="acceptTerms" value="acceptTerms" class="checkbox"><br>
+      
         <label for="subToMail" id="subToMail"class="checkBoxLabel">Subscribe to the mailing list</label><br>
+        <input type="checkbox" name="subToMail" id="subToMail" value="subToMail" class="checkbox">
         <p class="pOffColour">Information about releases, events and other news</p><br>
         <h2>Want to contact us? Listen to some of our <a href="music.html">music</a> with the <a href="#player">player</a> or browse our community <a href="community.html">forum</a> while we work on getting back to you.</h2>
         <button>Contact Us</button>
@@ -69,18 +71,32 @@
 
     <div id="footer">
         <!-- TODO: Possibly remove in nightMode -->
-        <h3>Community</h3> 
-        <h3>Studio</h3> <br>
-        <a class="footerLink" href="featured.html">Featured artists</a>
-        <a class="footerLink" href="aboutUs.html">About us</a> <br>
-        <a class="footerLink" href="live.html">Live events</a>
-        <a class="footerLink" href="legal.html">Legal</a>
+        
+        <div id="footerLinks">
+            <div id="communityLinks">
+                <h3>Community</h3>
+                <a class="footerLink" href="featured.html">Featured artists</a> <br>
+                <a class="footerLink" href="live.html">Live events</a> <br>
+            </div>
+            
+            <div id="studioLinks">
+                <h3>Studio</h3>
+                <a class="footerLink" href="legal.html">Legal</a> <br> 
+                <a class="footerLink" href="aboutUs.html">About us</a> <br>
+            </div>
+           
+        </div>
+        
         <hr>
-        <p>Follow us:</p>
-        <!--Replace with moonlitmicrotonalmusic accounts on nightMode -->
-        <span class="iconify icon" id="instaIcon" data-icon="akar-icons:instagram-fill" onclick="window.open('https://www.instagram.com/studio_dominic/')"></span>
-        <span class="iconify icon" id="twitchIcon" data-icon="akar-icons:twitch-fill" onclick="window.open('https://www.twitch.tv/dominicstudio')" ></span>
-        <span class="iconify icon" id="ytIcon" data-icon="akar-icons:youtube-fill" onclick="window.open('https://www.youtube.com/channel/UCpfvvzBoJFaWQH9fsovsJog')"></span>
+
+        <div id="socialLinks">
+            <p>Follow us:</p>
+            <!--Replace with moonlitmicrotonalmusic accounts on nightMode -->
+            <span class="iconify icon" id="instaIcon" data-icon="akar-icons:instagram-fill" onclick="window.open('https://www.instagram.com/studio_dominic/')"></span>
+            <span class="iconify icon" id="twitchIcon" data-icon="akar-icons:twitch-fill" onclick="window.open('https://www.twitch.tv/dominicstudio')" ></span>
+            <span class="iconify icon" id="ytIcon" data-icon="akar-icons:youtube-fill" onclick="window.open('https://www.youtube.com/channel/UCpfvvzBoJFaWQH9fsovsJog')"></span>
+        </div>
+        
     </div>
 
     <!-- Load the TwitchEmbed JavaScript file -->
