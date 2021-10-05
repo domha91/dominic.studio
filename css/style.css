@@ -1,9 +1,781 @@
+/* TODO: Responsiveness upto 4K */
+/* Monitors */
+@media screen and (min-width: 1920px) {
+
+    .iconify{
+        font-size: 30px;
+        vertical-align: middle;
+    }
+    
+    
+    body{
+        height: 100%;
+        background-image: linear-gradient(#97D3FF, #E5F4FF);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .bodyNight{
+        height: 100%;
+        background-image: linear-gradient( #01010C, #01010B);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    nav{
+        background-color: #97D3FF;
+        overflow: hidden;
+        position: fixed;
+        margin: auto;
+        margin-left: 8%;
+        display: inline-flex;
+    }
+    
+    .navNight{
+        background-color: #01010C;
+        overflow: hidden;
+        position: fixed;
+        margin: auto;
+        margin-left: 8%;
+        display: inline-flex;
+    }
+    
+    #hero{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+    
+    #player{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #subHero{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #signUp{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    input{
+        height: 40px;
+    }
+    
+    button{
+        height: 40px;
+    }
+    
+    #footer
+    {
+        display:block;
+    }
+    
+    
+    #footerLinks{
+        margin-left: 50%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    #communityLinks{
+        margin: 10px;   
+        display: block;
+        justify-content: center;
+    }
+    
+    #studioLinks{
+        margin: 10px;
+        justify-content: center;
+    }
+    
+    #socialLinks{
+        
+        display: block;
+        justify-content: center;
+    }
+    
+    #socialLinks{
+        margin-left: 75%;
+        height: 1%;
+        display: inline-flex;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    #tAndCsLink{
+        margin: 0 10px;
+    }
+    /* TODO: Add night mode formatting classes */
+    
+    #logo{
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+    }
+    
+    .homeIcon{
+        cursor: pointer;
+        color: #00396D;
+    }
+    
+    .homeIconActive{
+        cursor: pointer;
+        color: #0D84F1;
+    }
+    
+    .homeIconNight{
+        cursor: pointer;
+        color: #E9EDFA;
+    }
+    
+    .homeIconNightActive{
+        cursor: pointer;
+        color: #FFFCE5;
+    }
+    
+    .icon {
+        cursor: pointer;
+        color: #0D84F1;
+        /* TODO: center in container responsively */
+        margin-top: 40px;
+    }
+    
+    .iconNight{
+        color: #E9EDFA;
+    }
+    
+    .vinylIcon{
+        cursor: pointer;
+        color: black;
+    }
+    
+    .vinylIconNight{
+        cursor: pointer;
+        color: #fffccf;
+    }
+    
+    /* titleFontBig */
+    h1 {
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        color: #00396D;
+    }
+    
+    .h1Night{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        color: #E9EDFA;
+    }
+    
+    .h1OffColourDay{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        color: #0D84F1;
+    }
+    /* mainFontBig */
+    h2 {
+        font-family: 'Gowun Dodum', sans-serif;
+        font-style: normal;
+        font-size: 36px;
+        color: #00396D;
+    }
+    
+    .h2Night{
+        font-family: 'Gowun Dodum', sans-serif;
+        font-style: normal;
+        font-size: 36px;
+        color: #FFFCE5;
+    }
+    /* titleFont */
+    h3 {
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color: #00396D;
+    }
+    
+    .h3Night{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color: #FFFCE5
+    }
+    
+    /* titleFontBold */
+    .h3Bold{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        color: #00396D;
+    }
+    
+    .h3BoldNight{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        color: #E9EDFA;
+    }
+    
+    label{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color:#00396D;
+    }
+    
+    .labelNight{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color:#FFFCE5;
+    }
+    
+    .navLink{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color: #00396D;
+        display: block;
+        float: left;
+        text-align: center;
+        padding: 0.4rem;
+    }
+    
+    
+    .navLinkDayActive{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color: #0D84F1;
+    }
+    
+    .navLinkNight{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color: #E9EDFA;
+    }
+    
+    .navLinkNightActive{
+    
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color: #FFFCE5;
+    }
+    
+    a {
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color: #0D84F1;
+    }
+    
+    .aNight{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color: #E9EDFA;
+    }
+    
+    .footerLink{
+        font-family: 'Gowun Dodum', sans-serif;
+        font-style: normal;
+        font-size: 30px;
+        color: #00396D;
+        float: right;
+        display: block ;
+    
+    }
+    
+    .footerLinkNight{
+        font-family: 'Gowun Dodum', sans-serif;
+        font-style: normal;
+        font-size: 30px;
+        color: #E9EDFA;
+    }
+    
+    
+    /* titleFontSmall */
+    h4 {
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        color: #00396D;
+    }
+    
+    /* mainFont */
+    p {
+        font-family: 'Gowun Dodum', sans-serif;
+        font-style: normal;
+        font-size: 30px;
+        color: #00396D;
+    }
+    
+    .pNight{
+        font-family: 'Gowun Dodum', sans-serif;
+        font-style: normal;
+        font-size: 30px;
+        color: #FFFCE5;
+    }
+    
+    .pOffColour{
+        font-family: 'Gowun Dodum', sans-serif;
+        font-style: normal;
+        font-size: 30px;
+        color: #0D84F1;
+    }
+    
+    .pOffColourNight{
+        font-family: 'Gowun Dodum', sans-serif;
+        font-style: normal;
+        font-size: 30px;
+        color: #E9EDFA;
+    }
+    
+    #twitchEmbed{
+        display: none;
+    }
+    
+    #subHeroCopyNight{
+        display: none;
+    }
+    
+    #subHeroVidNight{
+        display: none;
+    }
+    
+    #instaIcon{
+        cursor: pointer;
+    }
+    
+    #twitchIcon{
+        cursor: pointer;
+    }
+    
+    #ytIcon{
+        cursor: pointer;
+    }
+}
+/* Desktops */
+@media screen and (max-width: 1579px) and (min-width: 1280px) {
+
+    .iconify{
+        font-size: 30px;
+        vertical-align: middle;
+    }
+    
+    
+    body{
+        height: 100%;
+        background-image: linear-gradient(#97D3FF, #E5F4FF);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .bodyNight{
+        height: 100%;
+        background-image: linear-gradient( #01010C, #01010B);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    nav{
+        background-color: #97D3FF;
+        overflow: hidden;
+        position: fixed;
+        margin: auto;
+        margin-left: 8%;
+        display: inline-flex;
+    }
+    
+    .navNight{
+        background-color: #01010C;
+        overflow: hidden;
+        position: fixed;
+        margin: auto;
+        margin-left: 8%;
+        display: inline-flex;
+    }
+    
+    #hero{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+    
+    #player{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #subHero{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #signUp{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    input{
+        height: 40px;
+    }
+    
+    button{
+        height: 40px;
+    }
+    
+    #footer
+    {
+        display:block;
+    }
+    
+    
+    #footerLinks{
+        margin-left: 50%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    #communityLinks{
+        margin: 10px;   
+        display: block;
+        justify-content: center;
+    }
+    
+    #studioLinks{
+        margin: 10px;
+        justify-content: center;
+    }
+    
+    #socialLinks{
+        
+        display: block;
+        justify-content: center;
+    }
+    
+    #socialLinks{
+        margin-left: 75%;
+        height: 1%;
+        display: inline-flex;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    #tAndCsLink{
+        margin: 0 10px;
+    }
+    /* TODO: Add night mode formatting classes */
+    
+    #logo{
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+    }
+    
+    .homeIcon{
+        cursor: pointer;
+        color: #00396D;
+    }
+    
+    .homeIconActive{
+        cursor: pointer;
+        color: #0D84F1;
+    }
+    
+    .homeIconNight{
+        cursor: pointer;
+        color: #E9EDFA;
+    }
+    
+    .homeIconNightActive{
+        cursor: pointer;
+        color: #FFFCE5;
+    }
+    
+    .icon {
+        cursor: pointer;
+        color: #0D84F1;
+        /* TODO: center in container responsively */
+        margin-top: 40px;
+    }
+    
+    .iconNight{
+        color: #E9EDFA;
+    }
+    
+    .vinylIcon{
+        cursor: pointer;
+        color: black;
+    }
+    
+    .vinylIconNight{
+        cursor: pointer;
+        color: #fffccf;
+    }
+    
+    /* titleFontBig */
+    h1 {
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        color: #00396D;
+    }
+    
+    .h1Night{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        color: #E9EDFA;
+    }
+    
+    .h1OffColourDay{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        color: #0D84F1;
+    }
+    /* mainFontBig */
+    h2 {
+        font-family: 'Gowun Dodum', sans-serif;
+        font-style: normal;
+        font-size: 36px;
+        color: #00396D;
+    }
+    
+    .h2Night{
+        font-family: 'Gowun Dodum', sans-serif;
+        font-style: normal;
+        font-size: 36px;
+        color: #FFFCE5;
+    }
+    /* titleFont */
+    h3 {
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color: #00396D;
+    }
+    
+    .h3Night{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color: #FFFCE5
+    }
+    
+    /* titleFontBold */
+    .h3Bold{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        color: #00396D;
+    }
+    
+    .h3BoldNight{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        color: #E9EDFA;
+    }
+    
+    label{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color:#00396D;
+    }
+    
+    .labelNight{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color:#FFFCE5;
+    }
+    
+    .navLink{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color: #00396D;
+        display: block;
+        float: left;
+        text-align: center;
+        padding: 0.4rem;
+    }
+    
+    
+    .navLinkDayActive{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color: #0D84F1;
+    }
+    
+    .navLinkNight{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color: #E9EDFA;
+    }
+    
+    .navLinkNightActive{
+    
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color: #FFFCE5;
+    }
+    
+    a {
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color: #0D84F1;
+    }
+    
+    .aNight{
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        color: #E9EDFA;
+    }
+    
+    .footerLink{
+        font-family: 'Gowun Dodum', sans-serif;
+        font-style: normal;
+        font-size: 30px;
+        color: #00396D;
+        float: right;
+        display: block ;
+    
+    }
+    
+    .footerLinkNight{
+        font-family: 'Gowun Dodum', sans-serif;
+        font-style: normal;
+        font-size: 30px;
+        color: #E9EDFA;
+    }
+    
+    
+    /* titleFontSmall */
+    h4 {
+        font-family: 'Archivo', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        color: #00396D;
+    }
+    
+    /* mainFont */
+    p {
+        font-family: 'Gowun Dodum', sans-serif;
+        font-style: normal;
+        font-size: 30px;
+        color: #00396D;
+    }
+    
+    .pNight{
+        font-family: 'Gowun Dodum', sans-serif;
+        font-style: normal;
+        font-size: 30px;
+        color: #FFFCE5;
+    }
+    
+    .pOffColour{
+        font-family: 'Gowun Dodum', sans-serif;
+        font-style: normal;
+        font-size: 30px;
+        color: #0D84F1;
+    }
+    
+    .pOffColourNight{
+        font-family: 'Gowun Dodum', sans-serif;
+        font-style: normal;
+        font-size: 30px;
+        color: #E9EDFA;
+    }
+    
+    #twitchEmbed{
+        display: none;
+    }
+    
+    #subHeroCopyNight{
+        display: none;
+    }
+    
+    #subHeroVidNight{
+        display: none;
+    }
+    
+    #instaIcon{
+        cursor: pointer;
+    }
+    
+    #twitchIcon{
+        cursor: pointer;
+    }
+    
+    #ytIcon{
+        cursor: pointer;
+    }
+}
+/* Laptops */
+@media screen and (max-width: 1279px) and (min-width: 769px) {
 
 .iconify{
     font-size: 30px;
     vertical-align: middle;
 }
-
 
 
 body{
@@ -84,8 +856,13 @@ button{
 }
 
 #communityLinks{
-    
+    margin: 10px;   
     display: block;
+    justify-content: center;
+}
+
+#studioLinks{
+    margin: 10px;
     justify-content: center;
 }
 
@@ -103,6 +880,9 @@ button{
     justify-content: center;
 }
 
+#tAndCsLink{
+    margin: 0 10px;
+}
 /* TODO: Add night mode formatting classes */
 
 #logo{
@@ -134,6 +914,8 @@ button{
 .icon {
     cursor: pointer;
     color: #0D84F1;
+    /* TODO: center in container responsively */
+    margin-top: 40px;
 }
 
 .iconNight{
@@ -370,4 +1152,5 @@ p {
 
 #ytIcon{
     cursor: pointer;
+}
 }
