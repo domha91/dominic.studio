@@ -53,18 +53,19 @@
     <div id="signUp">
         <h1> Want to stay updated?</h1>
         <h2>By signing up with this form, you will receive a monthly email newsletter as well as a community account with access to our forum.</h2>
-        <h3 class="h3Bold">Sign up for a free account</h2> <br>
-        <input type="email" name="email" id="email" placeholder="Enter your email address"><br>
-        <input type="password" name="password" id="password" placeholder="Enter your password"><br>
-        <button>Sign Up</button><br> <!-- TODO: Add Sign Up -->
+
+        <div id="signUpForm">
+            <h3 class="h3Bold">Sign up for a free account</h2> <br>
+            <input type="email" name="email" id="email" placeholder="Enter your email address"><br>
+            <input type="password" name="password" id="password" placeholder="Enter your password"><br>
+            <button>Sign Up</button><br> <!-- TODO: Add Sign Up -->
+            <label for="acceptTerms" id="acceptTermsLabel"class="checkBoxLabel">I accept the following </label> <br>
+            <a href="legal.html" id="tAndCsLink">Terms and Conditions</a><input type="checkbox" name="acceptTerms" id="acceptTerms" value="acceptTerms" class="checkbox"><br>
+            <label for="subToMail" id="subToMail"class="checkBoxLabel">Subscribe to the mailing list</label>
+            <input type="checkbox" name="subToMail" id="subToMail" value="subToMail" class="checkbox">
+            <p class="pOffColour">(Information about releases, events and other news)</p><br>
+        </div>
         
-        <label for="acceptTerms" id="acceptTermsLabel"class="checkBoxLabel">I accept the following </label> 
-        
-        <a href="legal.html" id="tAndCsLink">Terms and Conditions</a><input type="checkbox" name="acceptTerms" id="acceptTerms" value="acceptTerms" class="checkbox"><br>
-      
-        <label for="subToMail" id="subToMail"class="checkBoxLabel">Subscribe to the mailing list</label><br>
-        <input type="checkbox" name="subToMail" id="subToMail" value="subToMail" class="checkbox">
-        <p class="pOffColour">Information about releases, events and other news</p><br>
         <h2>Want to contact us? Listen to some of our <a href="music.html">music</a> with the <a href="#player">player</a> or browse our community <a href="community.html">forum</a> while we work on getting back to you.</h2>
         <button>Contact Us</button>
     </div>
