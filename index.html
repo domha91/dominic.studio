@@ -22,8 +22,8 @@
         <!-- TODO: Make into a dropdown menu with releases on every page but music.html-->
         <a href="music.html" class="navLink">Music</a> 
         <a href="community.html" class="navLink">Community</a>
-        <button onclick="window.open('/loginSignUp.html')">Log In</button>
-        <button onclick="window.open('/loginSignUp.html')">Sign Up</button>
+        <button class="navButton" onclick="window.open('/loginSignUp.html')">Log In</button>
+        <button class="navButton" onclick="window.open('/loginSignUp.html')">Sign Up</button>
         <!-- TODO: Add guest account functionality for shopping -->
         <!-- TODO: Add basket/vinyl icon when a product is added to basket  -->
         <span class="iconify vinylIcon" id="vinylIcon" data-icon="entypo:vinyl"></span>
@@ -33,6 +33,7 @@
         <!--TODO: Embed studio intro video --> 
         <iframe id="heroVid" width="560" height="315" src="https://www.youtube.com/embed/xImtB4Eiyog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <!--Replaces with embed to twitch feed in nightMode-->
+        <!-- TODO: Responsive twitchEmbed -->
         <div id= "twitchEmbed"></div>
     </div>
 
@@ -51,23 +52,23 @@
     </div>
 
     <div id="signUp">
-        <h1> Want to stay updated?</h1>
-        <h2>By signing up with this form, you will receive a monthly email newsletter as well as a community account with access to our forum.</h2>
+        <h1 id="signUpTitle"> Want to stay updated?</h1>
+        <h2 id="signUpCopy">By signing up with this form, you will receive a monthly email newsletter as well as a community account with access to our forum.</h2>
 
         <div id="signUpForm">
-            <h3 class="h3Bold">Sign up for a free account</h2> <br>
-            <input type="email" name="email" id="email" placeholder="Enter your email address"><br>
-            <input type="password" name="password" id="password" placeholder="Enter your password"><br>
-            <button>Sign Up</button><br> <!-- TODO: Add Sign Up -->
+            <h3 id="signUpFormTitle" class="h3Bold">Sign up for a free account</h2> <br>
+            <input class="signUpInput" type="email" name="email" id="email" placeholder="Enter your email address"><br>
+            <input class="signUpInput" type="password" name="password" id="password" placeholder="Enter your password"><br>
+            <button class="signUpFormButton">Sign Up</button><br> <!-- TODO: Add Sign Up -->
             <label for="acceptTerms" id="acceptTermsLabel"class="checkBoxLabel">I accept the following </label> <br>
             <a href="legal.html" id="tAndCsLink">Terms and Conditions</a><input type="checkbox" name="acceptTerms" id="acceptTerms" value="acceptTerms" class="checkbox"><br>
             <label for="subToMail" id="subToMail"class="checkBoxLabel">Subscribe to the mailing list</label>
             <input type="checkbox" name="subToMail" id="subToMail" value="subToMail" class="checkbox">
-            <p class="pOffColour">(Information about releases, events and other news)</p><br>
+            <p id="subToMailCopy" class="pOffColour">(Information about releases, events and other news)</p><br>
         </div>
         
-        <h2>Want to contact us? Listen to some of our <a href="music.html">music</a> with the <a href="#player">player</a> or browse our community <a href="community.html">forum</a> while we work on getting back to you.</h2>
-        <button>Contact Us</button>
+        <h2 id="contactLinkCopy">Want to contact us? Listen to some of our <a href="music.html">music</a> with the <a href="#player">player</a> or browse our community <a href="community.html">forum</a> while we work on getting back to you.</h2>
+        <button class="signUpFormButton">Contact Us</button>
     </div>
 
     <div id="footer">
