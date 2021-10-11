@@ -14,13 +14,21 @@
 <body class="bodyDay">
 
     <nav>
+        <!-- TODO: change nav background colour based on Y pos and gradient -->
         <img id="logo" src="../assets/images/logo/sun.png" onclick="nightMode()" alt="Click for different content!" >
         <span class="iconify homeIconActive" id= "homeIconActive" data-icon="fa:home" onclick="window.open('/index.html')"></span>
         <!-- Adds and replaces with link to software.html in nightMode -->
         <a href="pricing.html" id="pricingLink" class="navLink"  >Pricing</a>
         <a href="contact.html" id="contactLink" class="navLink">Contact</a>
-        <!-- TODO: Make into a dropdown menu with releases on every page but music.html-->
-        <a href="music.html" class="navLink">Music</a> 
+        <!-- TODO: nightMode version of dropdown--> 
+        <div class="dropdown">
+            <button onclick="window.open('music.html')"class="dropbtn navLink">Music</button>
+            <div class="dropdownContent">
+                <a href="products/testAlbum1.html">Link 1</a>
+                <a href="products/testAlbum2.html">Link 2</a>
+                <a href="products/testAlbum3.html">Link 3</a>
+            </div>
+        </div>
         <a href="community.html" class="navLink">Community</a>
         <button class="navButton" onclick="window.open('/loginSignUp.html')">Log In</button>
         <button class="navButton" onclick="window.open('/loginSignUp.html')">Sign Up</button>
@@ -60,7 +68,7 @@
             <input class="signUpInput" type="email" name="email" id="email" placeholder="Enter your email address"><br>
             <input class="signUpInput" type="password" name="password" id="password" placeholder="Enter your password"><br>
             <button class="signUpFormButton">Sign Up</button><br> <!-- TODO: Add Sign Up -->
-            <label for="acceptTerms" id="acceptTermsLabel"class="checkBoxLabel">I accept the following </label> <br>
+            <label for="acceptTerms" id="acceptTermsLabel"class="checkBoxLabel">I accept the following: </label> <br>
             <a href="legal.html" id="tAndCsLink">Terms and Conditions</a><input type="checkbox" name="acceptTerms" id="acceptTerms" value="acceptTerms" class="checkbox"><br>
             <label for="subToMail" id="subToMail"class="checkBoxLabel">Subscribe to the mailing list</label>
             <input type="checkbox" name="subToMail" id="subToMail" value="subToMail" class="checkbox">

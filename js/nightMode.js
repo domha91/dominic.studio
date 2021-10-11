@@ -1,5 +1,4 @@
-// TODO: Use cookies to trigger nightMode function to toggle it for
-// the duration of the session on all pages
+
 
 // TODO: Just change the colors with element.style.color instead of using 
 // all the elementNight classes
@@ -9,6 +8,11 @@
 
 
 function nightMode() {
+    // TODO: Use cookies to trigger nightMode function to toggle it for
+    // the duration of the session on all pages
+    // https://www.w3schools.com/js/js_cookies.asp
+    // https://www.cookieconsent.com/
+
 
     // TODO: Replace DOM elements
     // https://www.javascripttutorial.net/dom/manipulating/replace-a-dom-element/
