@@ -42,7 +42,6 @@ nav{
 
 .navNight{
     background-color: #01010C;
-    overflow: hidden;
     position: fixed;
     margin-top: 1%;
     margin-left: 50%;
@@ -150,15 +149,33 @@ nav{
     width: 30vw;
     font-size: inherit;
     font-family: inherit;
+    text-align: center;
 }
 
-.signUpFormButton{
+.signUpFormButtonDay{
+    border: 0;
     display: block; 
     margin: auto;
     height: 9vh;
     width: 9vw;
     font-size: inherit;
-    font-family: inherity
+    font-family: inherit;
+    background-color: #0D84F1;
+    color: white;
+    font-weight: 400;
+}
+
+.signUpFormButtonNight{
+    border: 0;
+    display: block; 
+    margin: auto;
+    height: 9vh;
+    width: 9vw;
+    font-size: inherit;
+    font-family: inherit;
+    background-color: #353148;
+    color: #fffccf;
+    font-weight: 400;
 }
 
 #subToMailCopy{
@@ -232,6 +249,8 @@ nav{
     margin-top: 3.5vh;
     min-width:40px;
     min-height:40px;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 .homeIcon{
@@ -272,12 +291,16 @@ nav{
 
 .vinylIcon{
     margin-top: 3.5vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
     cursor: pointer;
     color: black;
 }
 
 .vinylIconNight{
     margin-top: 3.5vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
     cursor: pointer;
     color: #fffccf;
 }
@@ -409,13 +432,60 @@ label{
     color: #FFFCE5;
 }
 
-.navButton{
+.signUpNavButtonDay{
+    border: 0;
     margin-top: 2.5vh;
+    margin-left: 0.75vw;
     height: 6vh;
     width: 5vw;
     font-size: 0.65em;
     font-family: inherit;
+    background-color: #0D84F1;
+    color: white;
+    font-weight: 400;
+
 }
+
+.signUpNavButtonNight{
+    border: 0;
+    margin-top: 2.5vh;
+    margin-left: 0.75vw;
+    height: 6vh;
+    width: 5vw;
+    font-size: 0.65em;
+    font-family: inherit;
+    background-color: #353148;
+    color: #fffccf;
+    font-weight: 400;
+
+}
+
+.logInNavButtonDay{
+    border: 0;
+    margin-top: 2.5vh;
+    margin-left: 0.75vw;
+    height: 6vh;
+    width: 5vw;
+    font-size: 0.65em;
+    font-family: inherit;
+    background-color: white;
+    color:  #00396D;
+    font-weight: 400;
+}
+
+.logInNavButtonNight{
+    border: 0;
+    margin-top: 2.5vh;
+    margin-left: 0.75vw;
+    height: 6vh;
+    width: 5vw;
+    font-size: 0.65em;
+    font-family: inherit;
+    background-color: white;
+    color:  #353148;
+    font-weight: 400;
+}
+
 
 a {
     font-family: 'Archivo', sans-serif;
@@ -666,6 +736,100 @@ background:#0D84F1;
     font-size: 20px;
     color: black;
 }
+
+/* Product Landing */
+
+.mailListSignUpForm{
+display: flex;
+justify-content: center;
+}
+
+#mailListEmail{
+margin-left: 0;
+margin-right: 10px;
+margin-top: 12px;
+height: 30px
+}
+
+#mailListSubmit{
+border: 0;
+margin: 15px 0;
+width: 100px;
+height: 30px;
+background-color: #0D84F1;
+font-weight: 400;
+color: white;
+}
+
+.productVid {
+height: 50vh;
+width: 80vw;
+display: block;
+margin: auto;
+}
+
+#albumPricing {
+margin-top: 60px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.releasePrice {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+width: calc(100%  / 3);
+margin: 10px;
+border: 1px solid #000;
+border-radius: 3px;
+}
+
+.releasePrice > .level {
+background-color: #ddd;
+color: #00396D;
+padding: 15px 0;
+width: 100%;
+text-transform: uppercase;
+font-weight: 700;
+}
+
+.releasePrice > h2 {
+margin-top: 15px;
+}
+
+.releasePrice > ol {
+display: block;
+margin: auto;
+padding: 0;
+
+}
+
+.releasePrice > ol > li {
+
+list-style-type: none;
+text-align: center;
+}
+
+.releasePrice > button {
+border: 0;
+margin: 15px 0;
+min-width: 100px;
+height: 8vh;
+background-color: #0D84F1;
+font-weight: 400;
+color: white;
+font-size: inherit;
+cursor: pointer;
+}
+
+.releasePrice > button:hover {
+background-color: goldenrod;
+transition: background-color 0.5s;
+}
+
+
 
 
 /* TODO: Responsiveness upto 4K */

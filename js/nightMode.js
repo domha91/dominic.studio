@@ -1,4 +1,6 @@
 
+// Import cookies module
+// const cookies = require('./cookies');
 
 // TODO: Just change the colors with element.style.color instead of using 
 // all the elementNight classes
@@ -7,12 +9,8 @@
 // https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
 
 
-function nightMode() {
-    // TODO: Use cookies to trigger nightMode function to toggle it for
-    // the duration of the session on all pages
-    // https://www.w3schools.com/js/js_cookies.asp
-    // https://www.cookieconsent.com/
 
+function nightMode() {
 
     // TODO: Replace DOM elements
     // https://www.javascripttutorial.net/dom/manipulating/replace-a-dom-element/
@@ -204,6 +202,26 @@ function nightMode() {
         });
     }
 
+    if (document.querySelectorAll('.signUpNavButtonDay')) {
+        var navLinkActive = document.querySelectorAll('.signUpNavButtonDay');
+        navLinkActive.forEach(element => {
+            element.classList.toggle('signUpNavButtonNight');
+        });
+    }
+
+    if (document.querySelectorAll('.logInNavButtonDay')) {
+        var navLinkActive = document.querySelectorAll('.logInNavButtonDay');
+        navLinkActive.forEach(element => {
+            element.classList.toggle('logInNavButtonNight');
+        });
+    }
+
+    if (document.querySelectorAll('.signUpFormButtonDay')) {
+        var navLinkActive = document.querySelectorAll('.signUpFormButtonDay');
+        navLinkActive.forEach(element => {
+            element.classList.toggle('signUpFormButtonNight');
+        });
+    }    
 
     if (document.querySelectorAll('h1')) {
         var h1 = document.querySelectorAll('h1');
@@ -269,8 +287,6 @@ function nightMode() {
     }
 
 }
-
-
 
 function lunarCalendar() {
     const logo = document.getElementById("logo");
